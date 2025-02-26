@@ -2,9 +2,10 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 enabled: process.env.ANALYZE === "true"
 })
 
-//const withPWA = require("next-pwa")({
-//  dest: "public"
-//})
+// Remova ou comente esta parte
+// const withPWA = require("next-pwa")({
+//   dest: "public"
+// });
 
 module.exports = withBundleAnalyzer(
   withPWA({
