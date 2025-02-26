@@ -74,7 +74,7 @@ export const ChatUI: FC<ChatUIProps> = ({}) => {
     } else {
       setLoading(false)
     }
-  }, [])
+  }, [fetchChat, fetchMessages, handleFocusChatInput, params.chatid, scrollToBottom, setIsAtBottom])
 
   const fetchMessages = async () => {
     const fetchedMessages = await getMessagesByChatId(params.chatid as string)
